@@ -1,0 +1,2 @@
+﻿sfml-main-d.lib(MainWin32.cpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'sfml-main-d.lib(MainWin32.cpp.obj)' or at 'C:\Users\David\Documents\GitHub\MICompClub2016\CompClubGame\Debug\vc100.pdb'; linking object as if no debug info
+  CompClubGame.vcxproj -> C:\Users\David\Documents\GitHub\MICompClub2016\CompClubGame\Debug\CompClubGame.exe
