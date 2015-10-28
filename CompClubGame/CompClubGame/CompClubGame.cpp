@@ -3,32 +3,27 @@
 
 #include "stdafx.h"
 #include "CompClubGame.h"
+#include <math.h>
 
 #include <SFML/Graphics.hpp>
 
 int main()
 {
-    sf::RenderWindow window(sf::VideoMode(200, 200), "SFML works!", sf::Style::Fullscreen);
-    sf::CircleShape shape(100.f);
-    shape.setFillColor(sf::Color::Green);
+    sf::RenderWindow window(sf::VideoMode(600, 600), "SFML works!", sf::Style::Default);
+	sf::CircleShape circle(100);
+	circle.setFillColor(sf::Color::White);
+
+	sf::Clock clock;
 
     while (window.isOpen())
-    {
-        sf::Event event;
-        while (window.pollEvent(event))
-        {
-            if (event.type == sf::Event::Closed)
-                window.close();
-			if(event.type == sf::Event::KeyPressed && sf::Keyboard::isKeyPressed(sf::Keyboard::Escape))
-				window.close();
-        }
+	{
+		window.clear();
 
-		
-
-        window.clear();
-        window.draw(shape);
-        window.display();
+		circle.setPosition(sf::Vector2f(200 + (200 * cos(((((double) clock.getElapsedTime().asMilliseconds() / 10000) * 180) / 3))), 200 + (200 * sin(((((double) clock.getElapsedTime().asMilliseconds() / 10000) * 180) / 3)))));
+		window.draw(circle);
+		window.display();
     }
 
     return 0;
+	//im a potato
 }
