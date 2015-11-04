@@ -1,9 +1,10 @@
-﻿Build started 10/14/2015 2:58:17 PM.
+﻿Build started 11/4/2015 2:49:29 PM.
      1>Project "\\misd-hs\Students\2016\S\David Stein\GitHub\MICompClub2016\CompClubGame\CompClubGame\CompClubGame.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
-         Touching "Debug\CompClubGame.unsuccessfulbuild".
+         Creating "Debug\CompClubGame.unsuccessfulbuild" because "AlwaysCreate" was specified.
        ClCompile:
-         All outputs are up-to-date.
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"\\misd-hs\Students\2016\S\David Stein\GitHub\MICompClub2016\CompClubGame\..\SFML-2.3.2\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Debug\CompClubGame.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"\\misd-hs\Students\2016\S\David Stein\GitHub\MICompClub2016\CompClubGame\..\SFML-2.3.2\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\CompClubGame.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt CompClubGame.cpp
          CompClubGame.cpp
        ManifestResourceCompile:
@@ -27,4 +28,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:07.14
+Time Elapsed 00:00:09.88
