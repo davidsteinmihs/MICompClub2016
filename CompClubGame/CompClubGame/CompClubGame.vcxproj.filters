@@ -27,7 +27,14 @@
     <ClInclude Include="CompClubGame.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+<<<<<<< HEAD
     <ClInclude Include="..\..\..\..\MICompClub2016\CompClubGame\CompClubGame\Planet.h">
+=======
+    <ClInclude Include="Galaxy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AstroObj.h">
+>>>>>>> origin/master
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -38,7 +45,14 @@
     <ClCompile Include="CompClubGame.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+<<<<<<< HEAD
     <ClCompile Include="..\..\..\..\MICompClub2016\CompClubGame\CompClubGame\Planet.cpp">
+=======
+    <ClCompile Include="Galaxy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AstroObj.cpp">
+>>>>>>> origin/master
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
