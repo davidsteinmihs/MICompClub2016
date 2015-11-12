@@ -27,12 +27,18 @@
     <ClInclude Include="CompClubGame.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\..\MICompClub2016\CompClubGame\CompClubGame\Planet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="CompClubGame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\MICompClub2016\CompClubGame\CompClubGame\Planet.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
