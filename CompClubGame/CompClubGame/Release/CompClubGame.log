@@ -1,18 +1,1 @@
-﻿Build started 11/18/15 12:20:26 PM.
-     1>Project "C:\GitHub\MICompClub2016\CompClubGame\CompClubGame\CompClubGame.vcxproj" on node 2 (build target(s)).
-     1>InitializeBuildStatus:
-         Creating "Release\CompClubGame.unsuccessfulbuild" because "AlwaysCreate" was specified.
-       ClCompile:
-         All outputs are up-to-date.
-         All outputs are up-to-date.
-       Link:
-         All outputs are up-to-date.
-         CompClubGame.vcxproj -> C:\GitHub\MICompClub2016\CompClubGame\Release\CompClubGame.exe
-       FinalizeBuildStatus:
-         Deleting file "Release\CompClubGame.unsuccessfulbuild".
-         Touching "Release\CompClubGame.lastbuildstate".
-     1>Done Building Project "C:\GitHub\MICompClub2016\CompClubGame\CompClubGame\CompClubGame.vcxproj" (build target(s)).
-
-Build succeeded.
-
-Time Elapsed 00:00:00.04
+﻿  CompClubGame.vcxproj -> C:\Users\David\Documents\GitHub\MICompClub2016\CompClubGame\Release\CompClubGame.exe

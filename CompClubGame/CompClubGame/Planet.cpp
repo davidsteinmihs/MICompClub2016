@@ -17,7 +17,7 @@ Planet::Planet(int rad, int pathRad, double startAngle, double degPerTick, int x
 	circle.setFillColor(color);
 }
 
-Planet::Planet(void)
+Planet::~Planet(void)
 {
 }
 

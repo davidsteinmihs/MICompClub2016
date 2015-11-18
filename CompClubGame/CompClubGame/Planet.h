@@ -1,11 +1,10 @@
 #include <SFML/Graphics.hpp>
-#include "AstroObj.h"
 
 #pragma once
 
-class Planet: public AstroObj{
+class Planet{
 
-protected:
+private:
 	int pathRadius, radius; 
 	double angle, degreesPerUpdate;
 	sf::Color color;
@@ -14,7 +13,7 @@ protected:
 
 public:
 	Planet(int rad, int pathRad, double startAngle, double degPerTick, int x, int y, sf::Color color);
-	Planet(void);
+	~Planet(void);
 	sf::CircleShape getCircle();
 };
 
