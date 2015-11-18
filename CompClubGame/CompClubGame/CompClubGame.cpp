@@ -5,15 +5,17 @@
 #include "CompClubGame.h"
 #include <SFML/Graphics.hpp>
 #include "Planet.h"
+#include "Star.h"
 
 int main()
 {
 
 	sf::RenderWindow window(sf::VideoMode(600, 600), "SFML works!", sf::Style::Default);
-	Planet sun(50, 0, 0, 0, 300, 300, sf::Color::Yellow);
-	Planet planet(30, 100, 0, .05, 300, 300, sf::Color::Blue);
-	Planet planet2(40, 200, 0, .03, 300, 300, sf::Color::Red);
-	Planet planet3(20, 300, 0, .025, 300, 300, sf::Color::Green);
+	Star sun(50, 0, 0, 0, 300, 300, sf::Color::Yellow);
+	sun.add(Planet(30, 100, 0, .05, 300, 300, sf::Color::Blue),50);
+	sun.add(Planet(40, 200, 0, .03, 300, 300, sf::Color::Red),80);
+	sun.add(Planet(20, 300, 0, .025, 300, 300, sf::Color::Green),110);
+	std::vector<sf::CircleShape> starCircles;
 	
 	sf::Clock clock;
 
@@ -30,10 +32,10 @@ int main()
         }
 
 		window.clear();
-		window.draw(sun.getCircle());
-		window.draw(planet.getCircle());
-		window.draw(planet2.getCircle());
-		window.draw(planet3.getCircle());
+		starCircles=sun.getShape();
+		for(int i=0;i<starCircles.size();i++){
+			window.draw(starCircles.at(i));
+		}
 		window.display();
     }
 
