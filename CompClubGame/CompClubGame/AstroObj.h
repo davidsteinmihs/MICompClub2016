@@ -6,6 +6,7 @@ public:
 	AstroObj(void);
 	~AstroObj(void);
 
+
 private:
 	sf::Texture model;
 
