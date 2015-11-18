@@ -82,22 +82,17 @@
     <None Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
     <ClInclude Include="..\..\..\..\MICompClub2016\CompClubGame\CompClubGame\Planet.h" />
-=======
+
     <ClInclude Include="AstroObj.h" />
->>>>>>> origin/master
     <ClInclude Include="CompClubGame.h" />
     <ClInclude Include="Galaxy.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
     <ClCompile Include="..\..\..\..\MICompClub2016\CompClubGame\CompClubGame\Planet.cpp" />
-=======
     <ClCompile Include="AstroObj.cpp" />
->>>>>>> origin/master
     <ClCompile Include="CompClubGame.cpp" />
     <ClCompile Include="Galaxy.cpp" />
     <ClCompile Include="stdafx.cpp">
