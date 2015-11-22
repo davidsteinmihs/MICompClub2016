@@ -1,28 +1,28 @@
-﻿Build started 11/18/15 11:34:04 AM.
-     1>Project "C:\GitHub\MICompClub2016\CompClubGame\CompClubGame\CompClubGame.vcxproj" on node 2 (build target(s)).
-     1>InitializeBuildStatus:
-         Creating "Debug\CompClubGame.unsuccessfulbuild" because "AlwaysCreate" was specified.
-       ClCompile:
-         All outputs are up-to-date.
-         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\GitHub\MICompClub2016\CompClubGame\..\SFML-2.3.2\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\CompClubGame.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt CompClubGame.cpp Planet.cpp Star.cpp
-         Star.cpp
-     1>c:\github\micompclub2016\compclubgame\compclubgame\star.cpp(6): error C2512: 'Planet' : no appropriate default constructor available
-     1>c:\github\micompclub2016\compclubgame\compclubgame\star.cpp(24): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
-     1>c:\github\micompclub2016\compclubgame\compclubgame\star.cpp(24): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
-         Generating Code...
-         Compiling...
-         CompClubGame.cpp
-         Generating Code...
-         Compiling...
-         Planet.cpp
-     1>c:\github\micompclub2016\compclubgame\compclubgame\planet.cpp(13): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
-     1>c:\github\micompclub2016\compclubgame\compclubgame\planet.cpp(14): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
-     1>c:\github\micompclub2016\compclubgame\compclubgame\planet.cpp(16): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
-     1>c:\github\micompclub2016\compclubgame\compclubgame\planet.cpp(28): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
-     1>c:\github\micompclub2016\compclubgame\compclubgame\planet.cpp(28): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
-         Generating Code...
-     1>Done Building Project "C:\GitHub\MICompClub2016\CompClubGame\CompClubGame\CompClubGame.vcxproj" (build target(s)) -- FAILED.
-
-Build FAILED.
-
-Time Elapsed 00:00:04.16
+﻿  Star.cpp
+c:\users\david\documents\github\micompclub2016\compclubgame\compclubgame\planet.h(14): error C2146: syntax error : missing ';' before identifier 'par'
+c:\users\david\documents\github\micompclub2016\compclubgame\compclubgame\planet.h(14): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\david\documents\github\micompclub2016\compclubgame\compclubgame\planet.h(14): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\david\documents\github\micompclub2016\compclubgame\compclubgame\planet.h(17): error C2061: syntax error : identifier 'Star'
+c:\users\david\documents\github\micompclub2016\compclubgame\compclubgame\planet.h(18): error C2061: syntax error : identifier 'Star'
+c:\users\david\documents\github\micompclub2016\compclubgame\compclubgame\planet.h(18): error C2535: 'Planet::Planet(int,int,double,double)' : member function already defined or declared
+          c:\users\david\documents\github\micompclub2016\compclubgame\compclubgame\planet.h(17) : see declaration of 'Planet::Planet'
+c:\users\david\documents\github\micompclub2016\compclubgame\compclubgame\star.cpp(25): warning C4018: '<' : signed/unsigned mismatch
+  Planet.cpp
+c:\users\david\documents\github\micompclub2016\compclubgame\compclubgame\star.h(10): error C2065: 'Planet' : undeclared identifier
+c:\users\david\documents\github\micompclub2016\compclubgame\compclubgame\star.h(10): error C3203: 'pair' : unspecialized class template can't be used as a template argument for template parameter '_Ty', expected a real type
+c:\users\david\documents\github\micompclub2016\compclubgame\compclubgame\star.h(10): error C2955: 'std::pair' : use of class template requires template argument list
+          c:\program files (x86)\microsoft visual studio 10.0\vc\include\utility(173) : see declaration of 'std::pair'
+c:\users\david\documents\github\micompclub2016\compclubgame\compclubgame\star.h(17): error C2061: syntax error : identifier 'Planet'
+c:\users\david\documents\github\micompclub2016\compclubgame\compclubgame\planet.cpp(7): error C2512: 'Star' : no appropriate default constructor available
+c:\users\david\documents\github\micompclub2016\compclubgame\compclubgame\planet.cpp(18): error C2512: 'Star' : no appropriate default constructor available
+  CompClubGame.cpp
+c:\users\david\documents\github\micompclub2016\compclubgame\compclubgame\star.h(10): error C2065: 'Planet' : undeclared identifier
+c:\users\david\documents\github\micompclub2016\compclubgame\compclubgame\star.h(10): error C3203: 'pair' : unspecialized class template can't be used as a template argument for template parameter '_Ty', expected a real type
+c:\users\david\documents\github\micompclub2016\compclubgame\compclubgame\star.h(10): error C2955: 'std::pair' : use of class template requires template argument list
+          c:\program files (x86)\microsoft visual studio 10.0\vc\include\utility(173) : see declaration of 'std::pair'
+c:\users\david\documents\github\micompclub2016\compclubgame\compclubgame\star.h(17): error C2061: syntax error : identifier 'Planet'
+c:\users\david\documents\github\micompclub2016\compclubgame\compclubgame\compclubgame.cpp(15): error C2660: 'Star::addPlanet' : function does not take 2 arguments
+c:\users\david\documents\github\micompclub2016\compclubgame\compclubgame\compclubgame.cpp(16): error C2660: 'Star::addPlanet' : function does not take 2 arguments
+c:\users\david\documents\github\micompclub2016\compclubgame\compclubgame\compclubgame.cpp(17): error C2660: 'Star::addPlanet' : function does not take 2 arguments
+c:\users\david\documents\github\micompclub2016\compclubgame\compclubgame\compclubgame.cpp(36): warning C4018: '<' : signed/unsigned mismatch
+  Generating Code...

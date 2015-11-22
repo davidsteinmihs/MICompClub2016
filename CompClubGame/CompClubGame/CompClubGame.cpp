@@ -11,11 +11,11 @@ int main()
 {
 
 	sf::RenderWindow window(sf::VideoMode(600, 600), "SFML works!", sf::Style::Default);
-	Star sun(50, 0, 0, 0, 300, 300, sf::Color::Yellow);
-	sun.add(Planet(30, 100, 0, .05, 300, 300, sf::Color::Blue),50);
-	sun.add(Planet(40, 200, 0, .03, 300, 300, sf::Color::Red),80);
-	sun.add(Planet(20, 300, 0, .025, 300, 300, sf::Color::Green),110);
-	std::vector<sf::CircleShape> starCircles;
+	Star sun = Star(50, 0, 0, sf::Color::Yellow);
+	sun.addPlanet(Planet(30, 100, 0, .05, sun, sf::Color::Blue),50);
+	sun.addPlanet(Planet(40, 200, 0, .03, sun, sf::Color::Red),80);
+	sun.addPlanet(Planet(20, 300, 0, .025, sun, sf::Color::Green),110);
+	std::vector<sf::Texture> starCircles;
 	
 	sf::Clock clock;
 
@@ -32,9 +32,9 @@ int main()
         }
 
 		window.clear();
-		starCircles=sun.getShape();
+		starCircles = sun.getPlanetModels();
 		for(int i=0;i<starCircles.size();i++){
-			window.draw(starCircles.at(i));
+			window.draw(sf::Sprite(starCircles.at(i)));
 		}
 		window.display();
     }

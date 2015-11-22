@@ -1,40 +1,25 @@
-﻿Build started 11/18/2015 2:50:35 PM.
-     1>Project "C:\Users\David Stein\Desktop\GitHub\MICompClub2016\CompClubGame\CompClubGame\CompClubGame.vcxproj" on node 2 (build target(s)).
-     1>InitializeBuildStatus:
-         Creating "Release\CompClubGame.unsuccessfulbuild" because "AlwaysCreate" was specified.
-       ClCompile:
-         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\Users\David Stein\Desktop\GitHub\MICompClub2016\CompClubGame\..\SFML-2.3.2\include" /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Release\CompClubGame.pch" /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
-         stdafx.cpp
-         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\Users\David Stein\Desktop\GitHub\MICompClub2016\CompClubGame\..\SFML-2.3.2\include" /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Release\CompClubGame.pch" /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt AstroObj.cpp CompClubGame.cpp Galaxy.cpp Planet.cpp Star.cpp
-         AstroObj.cpp
-         CompClubGame.cpp
-     1>CompClubGame.cpp(36): warning C4018: '<' : signed/unsigned mismatch
-         Galaxy.cpp
-         Planet.cpp
-     1>Planet.cpp(13): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
-     1>Planet.cpp(14): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
-     1>Planet.cpp(16): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
-     1>Planet.cpp(28): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
-     1>Planet.cpp(28): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
-         Star.cpp
-     1>Star.cpp(21): warning C4018: '<' : signed/unsigned mismatch
-       Link:
-         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\David Stein\Desktop\GitHub\MICompClub2016\CompClubGame\Release\CompClubGame.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\Users\David Stein\Desktop\GitHub\MICompClub2016\CompClubGame\..\SFML-2.3.2\lib" "sfml-graphics.lib" "sfml-window.lib" "sfml-main.lib" "sfml-system.lib" "sfml-network.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\CompClubGame.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\David Stein\Desktop\GitHub\MICompClub2016\CompClubGame\Release\CompClubGame.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\David Stein\Desktop\GitHub\MICompClub2016\CompClubGame\Release\CompClubGame.lib" /MACHINE:X86 Release\AstroObj.obj
-         Release\CompClubGame.obj
-         Release\Galaxy.obj
-         Release\Planet.obj
-         Release\Star.obj
-         Release\stdafx.obj
-         Generating code
-         Finished generating code
-         CompClubGame.vcxproj -> C:\Users\David Stein\Desktop\GitHub\MICompClub2016\CompClubGame\Release\CompClubGame.exe
-       Manifest:
-         c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\David Stein\Desktop\GitHub\MICompClub2016\CompClubGame\Release\CompClubGame.exe;#1" /manifest Release\CompClubGame.exe.intermediate.manifest
-       FinalizeBuildStatus:
-         Deleting file "Release\CompClubGame.unsuccessfulbuild".
-         Touching "Release\CompClubGame.lastbuildstate".
-     1>Done Building Project "C:\Users\David Stein\Desktop\GitHub\MICompClub2016\CompClubGame\CompClubGame\CompClubGame.vcxproj" (build target(s)).
-
-Build succeeded.
-
-Time Elapsed 00:00:05.24
+﻿  CompClubGame.cpp
+c:\users\david\documents\github\micompclub2016\compclubgame\compclubgame\Star.h(9): error C2065: 'Planet' : undeclared identifier
+c:\users\david\documents\github\micompclub2016\compclubgame\compclubgame\Star.h(9): error C3203: 'pair' : unspecialized class template can't be used as a template argument for template parameter '_Ty', expected a real type
+c:\users\david\documents\github\micompclub2016\compclubgame\compclubgame\Star.h(9): error C2955: 'std::pair' : use of class template requires template argument list
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\utility(173) : see declaration of 'std::pair'
+c:\users\david\documents\github\micompclub2016\compclubgame\compclubgame\Star.h(17): error C2061: syntax error : identifier 'Planet'
+CompClubGame.cpp(15): error C2660: 'Star::addPlanet' : function does not take 2 arguments
+CompClubGame.cpp(16): error C2660: 'Star::addPlanet' : function does not take 2 arguments
+CompClubGame.cpp(17): error C2660: 'Star::addPlanet' : function does not take 2 arguments
+CompClubGame.cpp(36): warning C4018: '<' : signed/unsigned mismatch
+  Planet.cpp
+c:\users\david\documents\github\micompclub2016\compclubgame\compclubgame\Star.h(9): error C2065: 'Planet' : undeclared identifier
+c:\users\david\documents\github\micompclub2016\compclubgame\compclubgame\Star.h(9): error C3203: 'pair' : unspecialized class template can't be used as a template argument for template parameter '_Ty', expected a real type
+c:\users\david\documents\github\micompclub2016\compclubgame\compclubgame\Star.h(9): error C2955: 'std::pair' : use of class template requires template argument list
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\utility(173) : see declaration of 'std::pair'
+c:\users\david\documents\github\micompclub2016\compclubgame\compclubgame\Star.h(17): error C2061: syntax error : identifier 'Planet'
+  Star.cpp
+c:\users\david\documents\github\micompclub2016\compclubgame\compclubgame\Planet.h(14): error C2146: syntax error : missing ';' before identifier 'par'
+c:\users\david\documents\github\micompclub2016\compclubgame\compclubgame\Planet.h(14): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\david\documents\github\micompclub2016\compclubgame\compclubgame\Planet.h(14): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\david\documents\github\micompclub2016\compclubgame\compclubgame\Planet.h(17): error C2061: syntax error : identifier 'Star'
+c:\users\david\documents\github\micompclub2016\compclubgame\compclubgame\Planet.h(18): error C2061: syntax error : identifier 'Star'
+c:\users\david\documents\github\micompclub2016\compclubgame\compclubgame\Planet.h(18): error C2535: 'Planet::Planet(int,int,double,double)' : member function already defined or declared
+          c:\users\david\documents\github\micompclub2016\compclubgame\compclubgame\Planet.h(17) : see declaration of 'Planet::Planet'
+Star.cpp(29): warning C4018: '<' : signed/unsigned mismatch
