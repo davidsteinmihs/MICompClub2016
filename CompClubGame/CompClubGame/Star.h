@@ -2,7 +2,6 @@
 #include <SFML/Graphics.hpp>
 #include "AstroObj.h"
 #include "Planet.h"
-
 class Star: public AstroObj{
 
 private:

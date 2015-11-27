@@ -1,25 +1,4 @@
-﻿  CompClubGame.cpp
-c:\users\david\documents\github\micompclub2016\compclubgame\compclubgame\Star.h(9): error C2065: 'Planet' : undeclared identifier
-c:\users\david\documents\github\micompclub2016\compclubgame\compclubgame\Star.h(9): error C3203: 'pair' : unspecialized class template can't be used as a template argument for template parameter '_Ty', expected a real type
-c:\users\david\documents\github\micompclub2016\compclubgame\compclubgame\Star.h(9): error C2955: 'std::pair' : use of class template requires template argument list
-          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\utility(173) : see declaration of 'std::pair'
-c:\users\david\documents\github\micompclub2016\compclubgame\compclubgame\Star.h(17): error C2061: syntax error : identifier 'Planet'
-CompClubGame.cpp(15): error C2660: 'Star::addPlanet' : function does not take 2 arguments
-CompClubGame.cpp(16): error C2660: 'Star::addPlanet' : function does not take 2 arguments
-CompClubGame.cpp(17): error C2660: 'Star::addPlanet' : function does not take 2 arguments
-CompClubGame.cpp(36): warning C4018: '<' : signed/unsigned mismatch
-  Planet.cpp
-c:\users\david\documents\github\micompclub2016\compclubgame\compclubgame\Star.h(9): error C2065: 'Planet' : undeclared identifier
-c:\users\david\documents\github\micompclub2016\compclubgame\compclubgame\Star.h(9): error C3203: 'pair' : unspecialized class template can't be used as a template argument for template parameter '_Ty', expected a real type
-c:\users\david\documents\github\micompclub2016\compclubgame\compclubgame\Star.h(9): error C2955: 'std::pair' : use of class template requires template argument list
-          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\utility(173) : see declaration of 'std::pair'
-c:\users\david\documents\github\micompclub2016\compclubgame\compclubgame\Star.h(17): error C2061: syntax error : identifier 'Planet'
-  Star.cpp
-c:\users\david\documents\github\micompclub2016\compclubgame\compclubgame\Planet.h(14): error C2146: syntax error : missing ';' before identifier 'par'
-c:\users\david\documents\github\micompclub2016\compclubgame\compclubgame\Planet.h(14): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-c:\users\david\documents\github\micompclub2016\compclubgame\compclubgame\Planet.h(14): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-c:\users\david\documents\github\micompclub2016\compclubgame\compclubgame\Planet.h(17): error C2061: syntax error : identifier 'Star'
-c:\users\david\documents\github\micompclub2016\compclubgame\compclubgame\Planet.h(18): error C2061: syntax error : identifier 'Star'
-c:\users\david\documents\github\micompclub2016\compclubgame\compclubgame\Planet.h(18): error C2535: 'Planet::Planet(int,int,double,double)' : member function already defined or declared
-          c:\users\david\documents\github\micompclub2016\compclubgame\compclubgame\Planet.h(17) : see declaration of 'Planet::Planet'
-Star.cpp(29): warning C4018: '<' : signed/unsigned mismatch
+﻿  Planet.cpp
+  Generating code
+  Finished generating code
+  CompClubGame.vcxproj -> C:\Users\David\Documents\GitHub\MICompClub2016\CompClubGame\Release\CompClubGame.exe

@@ -33,7 +33,7 @@ int main()
 
 		window.clear();
 		starCircles = sun.getPlanetModels();
-		for(int i=0;i<starCircles.size();i++){
+		for(unsigned int i = 0; i < starCircles.size(); i++){
 			window.draw(sf::Sprite(starCircles.at(i)));
 		}
 		window.display();

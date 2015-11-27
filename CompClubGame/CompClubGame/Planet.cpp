@@ -2,7 +2,7 @@
 #include "Planet.h"
 #include <SFML/Graphics.hpp>
 
-Planet::Planet(int rad, int pathRad, double startAngle, double degPerTick, Star parent, sf::Color planetColor, sf::Texture texture) : AstroObj(rad, planetColor, texture) //AstroObj onstructs the texture/model
+Planet::Planet(int rad, int pathRad, double startAngle, double degPerTick, AstroObj parent, sf::Color planetColor, sf::Texture texture) : AstroObj(rad, planetColor, texture) //AstroObj onstructs the texture/model
 {
 		
 	radius = rad;
@@ -13,7 +13,7 @@ Planet::Planet(int rad, int pathRad, double startAngle, double degPerTick, Star 
 	par = parent;
 }
 
-Planet::Planet(int rad, int pathRad, double startAngle, double degPerTick, Star parent, sf::Color planetColor) : AstroObj(rad, planetColor) //AstroObj onstructs the texture/model
+Planet::Planet(int rad, int pathRad, double startAngle, double degPerTick, AstroObj parent, sf::Color planetColor) : AstroObj(rad, planetColor) //AstroObj onstructs the texture/model
 {
 		
 	radius = rad;
