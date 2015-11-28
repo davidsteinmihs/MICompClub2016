@@ -2,14 +2,12 @@
 #include "Star.h"
 #include <SFML/Graphics.hpp>
 
-Star::Star(int rad, int x, int y, sf::Color starColor, sf::Texture texture) : AstroObj(rad, starColor, texture)
+Star::Star(int rad, float x, float y, sf::Color starColor, sf::Texture texture) : AstroObj(rad, sf::Vector2f(x,y), starColor, texture)
 {
-	position = sf::Vector2<int>(x,y);
 }
 
-Star::Star(int rad, int x, int y, sf::Color starColor) : AstroObj(rad, starColor)
+Star::Star(int rad, float x, float y, sf::Color starColor) : AstroObj(rad, sf::Vector2f(x,y), starColor)
 {
-	position = sf::Vector2<int>(x,y);
 }
 
 Star::Star(void){
@@ -20,14 +18,27 @@ Star::~Star(void)
 {
 }
 
-void Star::addPlanet(Planet p, int r){
-	planets.push_back(std::pair<Planet,int>(p,r));
+void Star::update()
+{
+	for(unsigned int i = 0; i < planets.size(); i++)
+	{
+		planets.at(i).update();
+	}
+}
+
+void Star::addPlanet(Planet p){
+	planets.push_back(p);
+}
+
+std::vector<Planet> Star::getPlanets()
+{
+	return planets;
 }
 
 std::vector<sf::Texture> Star::getPlanetModels(){
 	std::vector<sf::Texture> ret;
 	for(int i=0;i<planets.size();i++){
-		ret.push_back(planets.at(i).first.getModel());
+		ret.push_back(planets.at(i).getModel());
 	}
 	return ret;
 }

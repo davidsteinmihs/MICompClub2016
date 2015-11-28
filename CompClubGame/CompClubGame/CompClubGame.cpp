@@ -1,43 +1,52 @@
 // CompClubGame.cpp : Defines the entry point for the application.
 //
-
 #include "stdafx.h"
 #include "CompClubGame.h"
 #include <SFML/Graphics.hpp>
+#include "Renderer.h"
 #include "Planet.h"
 #include "Star.h"
 
+void gameloop() //must be declared before main() so that main() can use it.
+{
+	// This is here for testing purposes
+		Star sun = Star(50, 250, 250, sf::Color::Yellow);
+		sun.addPlanet(Planet(30, 100, 0, 5, sun, sf::Color::Blue));
+		sun.addPlanet(Planet(40, 200, 0, 3, sun, sf::Color::Red));
+		sun.addPlanet(Planet(20, 300, 0, 2.5, sun, sf::Color::Green));
+
+	while (Renderer::isOpen())
+	{
+
+		Renderer::update();
+		sun.update();
+		
+		
+
+		Renderer::addToRenderList(sun.getModel(), sun.getPosition());
+		for(unsigned int i = 0; i < sun.getPlanets().size(); i++)
+		{
+			Renderer::addToRenderList(sun.getPlanets().at(i).getModel(), sun.getPlanets().at(i).getPosition());
+		}
+
+
+		//Rest of loop here
+
+		Renderer::render();
+
+    }
+}
+
+
 int main()
 {
-
-	sf::RenderWindow window(sf::VideoMode(600, 600), "SFML works!", sf::Style::Default);
-	Star sun = Star(50, 0, 0, sf::Color::Yellow);
-	sun.addPlanet(Planet(30, 100, 0, .05, sun, sf::Color::Blue),50);
-	sun.addPlanet(Planet(40, 200, 0, .03, sun, sf::Color::Red),80);
-	sun.addPlanet(Planet(20, 300, 0, .025, sun, sf::Color::Green),110);
-	std::vector<sf::Texture> starCircles;
+	Renderer::init();
+	gameloop();
+	
 	
 	sf::Clock clock;
 
-    while (window.isOpen())
-	{
-
-		sf::Event event;
-        while (window.pollEvent(event))
-        {
-            if (event.type == sf::Event::Closed)
-                window.close();
-			if(event.type == sf::Event::KeyPressed && sf::Keyboard::isKeyPressed(sf::Keyboard::Escape))
-				window.close();
-        }
-
-		window.clear();
-		starCircles = sun.getPlanetModels();
-		for(unsigned int i = 0; i < starCircles.size(); i++){
-			window.draw(sf::Sprite(starCircles.at(i)));
-		}
-		window.display();
-    }
+    
 
     return 0;
- }
+}

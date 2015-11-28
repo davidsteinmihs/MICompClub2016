@@ -7,6 +7,7 @@
     <ClCompile Include="stdafx.cpp" />
     <ClCompile Include="Planet.cpp" />
     <ClCompile Include="Star.cpp" />
+    <ClCompile Include="Renderer.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AstroObj.h" />
@@ -16,6 +17,7 @@
     <ClInclude Include="targetver.h" />
     <ClInclude Include="Planet.h" />
     <ClInclude Include="Star.h" />
+    <ClInclude Include="Renderer.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ReadMe.txt" />
