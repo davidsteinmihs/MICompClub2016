@@ -1,6 +1,7 @@
 #include "StdAfx.h"
 #include "Planet.h"
 #include <SFML/Graphics.hpp>
+#include "Renderer.h"
 
 Planet::Planet(int rad, int pathRad, double startAngle, double degPerTick, AstroObj parent, sf::Color planetColor, sf::Texture texture) : AstroObj(rad, parent.getCenter(), planetColor, texture) //AstroObj onstructs the texture/model
 {
@@ -31,10 +32,11 @@ Planet::~Planet(void)
 
 void Planet::update()
 {
-	angle += degreesPerUpdate;
+	angle += degreesPerUpdate * Renderer::deltaTime();
 	setCenter(par.getCenter());
 	position.x += pathRadius * cos(angle * PI/180);
 	position.y += pathRadius * sin(angle * PI/180);
+	Renderer::addToRenderList(model,position);
 }
 
 sf::Texture Planet::getModel(){

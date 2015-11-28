@@ -1,16 +1,5 @@
-﻿  AstroObj.cpp
-AstroObj.cpp(1): warning C4627: '#include <SFML\Graphics.hpp>': skipped when looking for precompiled header use
-          Add directive to 'StdAfx.h' or rebuild precompiled header
-AstroObj.cpp(11): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
-AstroObj.cpp(27): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
-  CompClubGame.cpp
-  Planet.cpp
-Planet.cpp(14): warning C4244: '+=' : conversion from 'double' to 'float', possible loss of data
-Planet.cpp(15): warning C4244: '+=' : conversion from 'double' to 'float', possible loss of data
-Planet.cpp(36): warning C4244: '+=' : conversion from 'double' to 'float', possible loss of data
-Planet.cpp(37): warning C4244: '+=' : conversion from 'double' to 'float', possible loss of data
+﻿  CompClubGame.cpp
   Star.cpp
-Star.cpp(40): warning C4018: '<' : signed/unsigned mismatch
   Generating code
   Finished generating code
   CompClubGame.vcxproj -> C:\Users\David\Documents\GitHub\MICompClub2016\CompClubGame\Release\CompClubGame.exe

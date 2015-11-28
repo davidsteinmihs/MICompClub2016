@@ -6,8 +6,8 @@ class Star: public AstroObj{
 
 private:
 	std::vector<Planet> planets;
-	sf::Vector2f position;
-
+	int numPlanets;
+	
 public:
 	Star(int rad, float x, float y, sf::Color color, sf::Texture);
 	Star(int rad, float x, float y, sf::Color color);
@@ -16,6 +16,6 @@ public:
 	void addPlanet(Planet p);
 	std::vector<Planet> getPlanets();
 	sf::Texture getModel();
-	std::vector<sf::Texture> getPlanetModels();
 	void update();
+	int getNumPlanets();
 };
