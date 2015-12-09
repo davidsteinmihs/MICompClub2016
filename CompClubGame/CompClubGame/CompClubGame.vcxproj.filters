@@ -8,6 +8,8 @@
     <ClCompile Include="Planet.cpp" />
     <ClCompile Include="Star.cpp" />
     <ClCompile Include="Renderer.cpp" />
+    <ClCompile Include="StarCluster.cpp" />
+    <ClCompile Include="Quadrant.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AstroObj.h" />
@@ -18,6 +20,8 @@
     <ClInclude Include="Planet.h" />
     <ClInclude Include="Star.h" />
     <ClInclude Include="Renderer.h" />
+    <ClInclude Include="StarCluster.h" />
+    <ClInclude Include="Quadrant.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ReadMe.txt" />

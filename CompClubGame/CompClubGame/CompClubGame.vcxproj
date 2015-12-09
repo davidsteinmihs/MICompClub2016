@@ -86,8 +86,10 @@
     <ClInclude Include="CompClubGame.h" />
     <ClInclude Include="Galaxy.h" />
     <ClInclude Include="Planet.h" />
+    <ClInclude Include="Quadrant.h" />
     <ClInclude Include="Renderer.h" />
     <ClInclude Include="Star.h" />
+    <ClInclude Include="StarCluster.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
@@ -96,8 +98,10 @@
     <ClCompile Include="CompClubGame.cpp" />
     <ClCompile Include="Galaxy.cpp" />
     <ClCompile Include="Planet.cpp" />
+    <ClCompile Include="Quadrant.cpp" />
     <ClCompile Include="Renderer.cpp" />
     <ClCompile Include="Star.cpp" />
+    <ClCompile Include="StarCluster.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
