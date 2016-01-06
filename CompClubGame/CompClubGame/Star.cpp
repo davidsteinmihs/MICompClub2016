@@ -49,3 +49,22 @@ sf::Texture Star::getModel(){
 	return model;
 }
 
+void Star::generate()
+{
+	generate(time(NULL));
+}
+
+void Star::generate(int seed)
+{
+	srand(seed);
+	int q = rand() % 3 +3; //random int betweeen 3 and 6
+	for(int i = 0; i < q; i++)
+	{
+		int r = 1;//rand() % 30 + 20;
+		int pathrad = rand() % 500 + 100;
+		int theta = rand() % 6;
+		int ospeed = rand() % 45;
+		Planet x = Planet(r,pathrad,theta,ospeed,*this,sf::Color(rand() % 255,rand() % 255,rand() % 255));
+		addPlanet(x);
+	}
+}

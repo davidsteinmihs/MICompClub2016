@@ -1,6 +1,6 @@
 #include "StdAfx.h"
 #include "Renderer.h"
-
+#include <cstdlib>
 //need to declare static member variables of Renderer here so that they can be used. If you don't you get a linker error.
 sf::RenderWindow Renderer::window;
 std::vector<std::pair<sf::Texture, sf::Vector2f>> Renderer::objs;

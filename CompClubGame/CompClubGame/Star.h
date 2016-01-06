@@ -18,4 +18,6 @@ public:
 	sf::Texture getModel();
 	void update();
 	int getNumPlanets();
+	void generate(int seed);
+	void generate();
 };

@@ -7,6 +7,8 @@ public:
 	~Quadrant(void);
 	void addCluster(StarCluster C);
 	void update();
+	void generate(int seed);
+	void generate();
 private:
 	std::vector<StarCluster> clusters;
 };
