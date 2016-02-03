@@ -15,8 +15,10 @@ public:
 	~Renderer(void);
 	static int getFPS();
 	static float deltaTime();
+	static sf::Vector2f offset;
 protected:
 	static sf::RenderWindow window;
+	static sf::RenderTexture renderTexture;
 	static std::vector<std::pair<sf::Texture, sf::Vector2f>> objs;
 	static sf::Clock clock;
 	static sf::Time deltaT;

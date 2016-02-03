@@ -3,13 +3,16 @@
 #include <cstdlib>
 //need to declare static member variables of Renderer here so that they can be used. If you don't you get a linker error.
 sf::RenderWindow Renderer::window;
+sf::RenderTexture Renderer::renderTexture;
 std::vector<std::pair<sf::Texture, sf::Vector2f>> Renderer::objs;
+sf::Vector2f Renderer::offset;
 sf::Clock Renderer::clock;
 sf::Time Renderer::deltaT;
 
 void Renderer::init()
 {
 	window.create(sf::VideoMode(600, 600), "SFML works!", sf::Style::Default);
+	renderTexture.create(6000, 6000);
 	deltaT = clock.getElapsedTime();
 }
 
@@ -36,6 +39,7 @@ void Renderer::update()
 void Renderer::render()
 {
 	window.clear();
+	renderTexture.clear();
 
 	for(unsigned int i = 0; i < objs.size(); i++)
 	{
@@ -44,9 +48,17 @@ void Renderer::render()
 		sf::Sprite s(obj.first);
 		s.setPosition(obj.second);
 
-		window.draw(s);
+		renderTexture.draw(s);
+		renderTexture.display();
 	}
 
+	const sf::Texture& texture = renderTexture.getTexture();
+
+	sf::Sprite sprite(texture);
+
+	sprite.setPosition(offset.x, offset.y);
+
+	window.draw(sprite);
 	window.display();
 
 	objs.clear();

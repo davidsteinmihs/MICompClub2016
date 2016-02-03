@@ -1,12 +1,14 @@
-﻿Build started 1/6/2016 3:08:26 PM.
+﻿Build started 2/3/2016 3:17:15 PM.
      1>Project "C:\Users\David Stein\Desktop\GitHub\MICompClub2016\CompClubGame\CompClubGame\CompClubGame.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
-         Touching "Release\CompClubGame.unsuccessfulbuild".
+         Creating "Release\CompClubGame.unsuccessfulbuild" because "AlwaysCreate" was specified.
        ClCompile:
          All outputs are up-to-date.
-         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\Users\David Stein\Desktop\GitHub\MICompClub2016\CompClubGame\..\SFML-2.3.2\include" /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Release\CompClubGame.pch" /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Star.cpp
-         Star.cpp
-     1>Star.cpp(54): warning C4244: 'argument' : conversion from 'time_t' to 'int', possible loss of data
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\Users\David Stein\Desktop\GitHub\MICompClub2016\CompClubGame\..\SFML-2.3.2\include" /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Release\CompClubGame.pch" /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt StarCluster.cpp
+         StarCluster.cpp
+     1>StarCluster.cpp(29): warning C4244: 'argument' : conversion from 'time_t' to 'int', possible loss of data
+     1>StarCluster.cpp(44): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>StarCluster.cpp(44): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
        Link:
          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\David Stein\Desktop\GitHub\MICompClub2016\CompClubGame\Release\CompClubGame.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\Users\David Stein\Desktop\GitHub\MICompClub2016\CompClubGame\..\SFML-2.3.2\lib" "sfml-graphics.lib" "sfml-window.lib" "sfml-main.lib" "sfml-system.lib" "sfml-network.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\CompClubGame.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\David Stein\Desktop\GitHub\MICompClub2016\CompClubGame\Release\CompClubGame.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\David Stein\Desktop\GitHub\MICompClub2016\CompClubGame\Release\CompClubGame.lib" /MACHINE:X86 Release\AstroObj.obj
          Release\CompClubGame.obj
@@ -29,4 +31,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:01.71
+Time Elapsed 00:00:01.69
