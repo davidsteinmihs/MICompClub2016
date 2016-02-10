@@ -22,5 +22,7 @@ protected:
 	static std::vector<std::pair<sf::Texture, sf::Vector2f>> objs;
 	static sf::Clock clock;
 	static sf::Time deltaT;
+	static bool mouseClick;
+	static sf::Vector2i mouseStart;
 };
 

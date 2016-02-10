@@ -6,8 +6,6 @@
 #include "Renderer.h"
 #include "Galaxy.h"
 
-
-
 void gameloop() //must be declared before main() so that main() can use it.
 {
 	// This is here for testing purposes
@@ -23,7 +21,6 @@ void gameloop() //must be declared before main() so that main() can use it.
 		Renderer::update();
 		//sun.update();
 		gal.update();
-
 
 		//Rest of loop here
 

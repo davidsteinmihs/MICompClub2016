@@ -1,6 +1,7 @@
 #include "StdAfx.h"
 #include "Renderer.h"
 #include <cstdlib>
+#include <string>
 //need to declare static member variables of Renderer here so that they can be used. If you don't you get a linker error.
 sf::RenderWindow Renderer::window;
 sf::RenderTexture Renderer::renderTexture;
@@ -8,6 +9,8 @@ std::vector<std::pair<sf::Texture, sf::Vector2f>> Renderer::objs;
 sf::Vector2f Renderer::offset;
 sf::Clock Renderer::clock;
 sf::Time Renderer::deltaT;
+bool Renderer::mouseClick;
+sf::Vector2i Renderer::mouseStart;
 
 void Renderer::init()
 {
@@ -25,15 +28,30 @@ void Renderer::update()
 {
 	deltaT = clock.restart();
 	sf::Event event;
+
+	if(sf::Mouse::isButtonPressed(sf::Mouse::Left)){
+
+		if(!mouseClick){
+
+			mouseClick = true;
+			mouseStart = sf::Vector2i(sf::Mouse::getPosition().x, sf::Mouse::getPosition().y);
+		}
+
+		else{
+
+			offset = sf::Vector2f(offset.x + ((sf::Mouse::getPosition().x - mouseStart.x) / 100), offset.y + ((sf::Mouse::getPosition().x - mouseStart.y) / 100));
+			mouseStart = sf::Mouse::getPosition();
+		}
+	}
+
 	while (window.pollEvent(event))
 	{
+
 		if ((event.type == sf::Event::Closed) || (event.type == sf::Event::KeyPressed && sf::Keyboard::isKeyPressed(sf::Keyboard::Escape)))
 		{
 			window.close();
-		}
-			
+		}	
 	}
-
 }
 
 void Renderer::render()
