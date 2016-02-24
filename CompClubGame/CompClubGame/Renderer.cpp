@@ -15,7 +15,7 @@ sf::Vector2i Renderer::mouseStart;
 void Renderer::init()
 {
 	window.create(sf::VideoMode(600, 600), "SFML works!", sf::Style::Default);
-	renderTexture.create(6000, 6000);
+	renderTexture.create(2000, 2000);
 	deltaT = clock.getElapsedTime();
 }
 
@@ -33,15 +33,26 @@ void Renderer::update()
 
 		if(!mouseClick){
 
-			mouseClick = true;
-			mouseStart = sf::Vector2i(sf::Mouse::getPosition().x, sf::Mouse::getPosition().y);
-		}
-
-		else{
-
-			offset = sf::Vector2f(offset.x + ((sf::Mouse::getPosition().x - mouseStart.x) / 100), offset.y + ((sf::Mouse::getPosition().x - mouseStart.y) / 100));
 			mouseStart = sf::Mouse::getPosition();
+			mouseClick = true;
 		}
+
+		if(offset.x + (sf::Mouse::getPosition().x - mouseStart.x) < 0 && offset.x + (sf::Mouse::getPosition().x - mouseStart.x) + renderTexture.getSize().x > window.getSize().x){
+
+			offset = sf::Vector2f(offset.x + (sf::Mouse::getPosition().x - mouseStart.x), offset.y);
+		}
+		
+		if(offset.y + (sf::Mouse::getPosition().y - mouseStart.y) < 0 && offset.y + (sf::Mouse::getPosition().y - mouseStart.y) + renderTexture.getSize().y > window.getSize().y){
+
+			offset = sf::Vector2f(offset.x, offset.y + (sf::Mouse::getPosition().y - mouseStart.y));
+		}
+
+		mouseStart = sf::Mouse::getPosition();
+	}
+
+	else{
+
+		mouseClick = false;
 	}
 
 	while (window.pollEvent(event))
