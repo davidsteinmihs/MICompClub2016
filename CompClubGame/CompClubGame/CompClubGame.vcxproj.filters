@@ -10,6 +10,8 @@
     <ClCompile Include="Renderer.cpp" />
     <ClCompile Include="StarCluster.cpp" />
     <ClCompile Include="Quadrant.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="Ship.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AstroObj.h" />
@@ -22,6 +24,8 @@
     <ClInclude Include="Renderer.h" />
     <ClInclude Include="StarCluster.h" />
     <ClInclude Include="Quadrant.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="Ship.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ReadMe.txt" />
