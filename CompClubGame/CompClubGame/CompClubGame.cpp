@@ -14,7 +14,7 @@ void gameloop() //must be declared before main() so that main() can use it.
 	//sun.addPlanet(Planet(40, 200, 0, 30, sun, sf::Color::Red));
 	//sun.addPlanet(Planet(20, 300, 0, 60, sun, sf::Color::Green));
 	Galaxy gal = Galaxy();
-	gal.generate(0);
+	gal.generate(589418);
 	while (Renderer::isOpen())
 	{
 

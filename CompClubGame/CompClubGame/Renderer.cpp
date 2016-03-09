@@ -14,7 +14,7 @@ sf::Vector2i Renderer::mouseStart;
 
 void Renderer::init()
 {
-	window.create(sf::VideoMode(600, 600), "SFML works!", sf::Style::Default);
+	window.create(sf::VideoMode(1920, 1080), "SFML works!", sf::Style::Fullscreen);
 	renderTexture.create(2000, 2000);
 	deltaT = clock.getElapsedTime();
 }

@@ -32,17 +32,15 @@ void StarCluster::generate()
 void StarCluster::generate(int seed)
 {
 	srand(seed);
-	int q = rand() % 3 +3; //random int betweeen 3 and 6
+	int q = rand() % 6 + 3; //random int betweeen 3 and 6
 	for(int i = 0; i < q; i++)
 	{
-		int r = rand() % 100 + 20;
+		int r = rand() % 50 + 20;
 		int u,v;
-		//u = rand() % 16383 - 16383;
-		//v = rand() % 16383 - 16383;
-		u = rand() % 600;
-		v = rand() % 600;
+		u = rand() % 2880 - 960;
+		v = rand() % 1596 - 516;
 		Star x = Star(r,u,v,sf::Color(rand() % 255,rand() % 255,rand() % 255));
-		x.generate(seed);
+		x.generate(seed + q);
 		addStar(x);
 	}
 }

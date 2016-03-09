@@ -11,10 +11,12 @@ public:
 	sf::Vector2f getPosition();
 	sf::Vector2f getCenter();
 	void setCenter(sf::Vector2f newcent);
+	int radius;
+	sf::Color col;
 
 protected:
 	sf::Texture model;
 	sf::Vector2f position; //point around which object orbits(in case of planets), or where it is(in case of Star)
-	int radius;
+	
 };
 

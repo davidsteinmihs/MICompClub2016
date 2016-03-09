@@ -57,11 +57,11 @@ void Star::generate()
 void Star::generate(int seed)
 {
 	srand(seed);
-	int q = rand() % 3 +3; //random int betweeen 3 and 6
+	int q = rand() % 6 +3; //random int betweeen 3 and 6
 	for(int i = 0; i < q; i++)
 	{
-		int r = rand() % 30 + 20;
-		int pathrad = rand() % 500 + 100;
+		int r = rand() % 1 + 5;
+		int pathrad = rand() % 100 + 100;
 		int theta = rand() % 6;
 		int ospeed = rand() % 45;
 		Planet x = Planet(r,pathrad,theta,ospeed,*this,sf::Color(rand() % 255,rand() % 255,rand() % 255));

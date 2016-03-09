@@ -8,6 +8,7 @@ AstroObj::AstroObj(int rad, sf::Vector2f pos, sf::Color objColor, sf::Texture te
 	position = pos;
 	radius = rad;
 
+	col = objColor;
 	sf::CircleShape circleshape(rad);
 	circleshape.setTexture(&texture, true);
 	circleshape.setFillColor(objColor);
@@ -24,6 +25,7 @@ AstroObj::AstroObj(int rad, sf::Vector2f pos, sf::Color objColor)
 	position = pos;
 	radius = rad;
 
+	col = objColor;
 	sf::CircleShape circleshape(rad);
 	circleshape.setFillColor(objColor);
 	sf::RenderTexture tex;

@@ -32,11 +32,11 @@ void Quadrant::generate()
 void Quadrant::generate(int seed)
 {
 	srand(seed);
-	int q = 1;//rand() % 3 +3; //random int betweeen 3 and 6
+	int q = rand() % 3 + 3; //random int betweeen 3 and 6
 	for(int i = 0; i < q; i++)
 	{
 		StarCluster x = StarCluster();
-		x.generate(seed);
+		x.generate(seed + q);
 		addCluster(x);
 	}
 }
