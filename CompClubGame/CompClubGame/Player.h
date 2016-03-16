@@ -1,6 +1,6 @@
 #pragma once
-#include <SFML\Graphics.hpp>;
-#include "Ship.h";
+#include <SFML\Graphics.hpp>
+#include "Ship.h"
 
 class Player
 {

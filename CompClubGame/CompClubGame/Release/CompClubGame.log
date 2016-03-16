@@ -1,13 +1,10 @@
-﻿Build started 3/9/2016 2:54:48 PM.
-     1>Project "C:\Users\David Stein\Desktop\GitHub\MICompClub2016\CompClubGame\CompClubGame\CompClubGame.vcxproj" on node 2 (build target(s)).
-     1>InitializeBuildStatus:
-         Creating "Release\CompClubGame.unsuccessfulbuild" because "AlwaysCreate" was specified.
-       ClCompile:
-         All outputs are up-to-date.
-         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\Users\David Stein\Desktop\GitHub\MICompClub2016\CompClubGame\..\SFML-2.3.2\include" /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Release\CompClubGame.pch" /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt AstroObj.cpp CompClubGame.cpp Galaxy.cpp Planet.cpp Quadrant.cpp Star.cpp StarCluster.cpp
+﻿Build started 3/16/2016 2:46:18 PM.
+     1>Project "\\misd-hs\Students\2016\S\David Stein\GitHub\MICompClub2016\CompClubGame\CompClubGame\CompClubGame.vcxproj" on node 2 (Rebuild target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"\\misd-hs\Students\2016\S\David Stein\GitHub\MICompClub2016\CompClubGame\..\SFML-2.3.2\include" /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D CODE_ANALYSIS /D WIN32 /D NDEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Release\CompClubGame.pch.codeanalysis" /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze /analyze:plugin"C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\\bin\localespc.dll" /errorReport:prompt   /analyze:quiet stdafx.cpp
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"\\misd-hs\Students\2016\S\David Stein\GitHub\MICompClub2016\CompClubGame\..\SFML-2.3.2\include" /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D CODE_ANALYSIS /D WIN32 /D NDEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze /analyze:plugin"C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\\bin\localespc.dll" /errorReport:prompt   /analyze:quiet AstroObj.cpp CompClubGame.cpp Galaxy.cpp Planet.cpp Player.cpp Quadrant.cpp Renderer.cpp Ship.cpp Star.cpp StarCluster.cpp
          AstroObj.cpp
-     1>AstroObj.cpp(1): warning C4627: '#include <SFML\Graphics.hpp>': skipped when looking for precompiled header use
-                 Add directive to 'StdAfx.h' or rebuild precompiled header
      1>AstroObj.cpp(12): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
      1>AstroObj.cpp(29): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
          CompClubGame.cpp
@@ -18,34 +15,35 @@
      1>Planet.cpp(16): warning C4244: '+=' : conversion from 'double' to 'float', possible loss of data
      1>Planet.cpp(37): warning C4244: '+=' : conversion from 'double' to 'float', possible loss of data
      1>Planet.cpp(38): warning C4244: '+=' : conversion from 'double' to 'float', possible loss of data
+         Player.cpp
          Quadrant.cpp
      1>Quadrant.cpp(29): warning C4244: 'argument' : conversion from 'time_t' to 'int', possible loss of data
+         Renderer.cpp
+     1>Renderer.cpp(103): warning C4244: 'return' : conversion from 'float' to 'int', possible loss of data
+         Ship.cpp
          Star.cpp
      1>Star.cpp(54): warning C4244: 'argument' : conversion from 'time_t' to 'int', possible loss of data
          StarCluster.cpp
-     1>StarCluster.cpp(30): warning C4244: 'argument' : conversion from 'time_t' to 'int', possible loss of data
-     1>StarCluster.cpp(43): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
-     1>StarCluster.cpp(43): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>StarCluster.cpp(29): warning C4244: 'argument' : conversion from 'time_t' to 'int', possible loss of data
+     1>StarCluster.cpp(42): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+         Running Code Analysis for C/C++...
        Link:
-         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\David Stein\Desktop\GitHub\MICompClub2016\CompClubGame\Release\CompClubGame.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\Users\David Stein\Desktop\GitHub\MICompClub2016\CompClubGame\..\SFML-2.3.2\lib" "sfml-graphics.lib" "sfml-window.lib" "sfml-main.lib" "sfml-system.lib" "sfml-network.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\CompClubGame.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\David Stein\Desktop\GitHub\MICompClub2016\CompClubGame\Release\CompClubGame.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\David Stein\Desktop\GitHub\MICompClub2016\CompClubGame\Release\CompClubGame.lib" /MACHINE:X86 Release\AstroObj.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"\\misd-hs\Students\2016\S\David Stein\GitHub\MICompClub2016\CompClubGame\Release\CompClubGame.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"\\misd-hs\Students\2016\S\David Stein\GitHub\MICompClub2016\CompClubGame\..\SFML-2.3.2\lib" "sfml-graphics.lib" "sfml-window.lib" "sfml-main.lib" "sfml-system.lib" "sfml-network.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"\\misd-hs\Students\2016\S\David Stein\GitHub\MICompClub2016\CompClubGame\Release\CompClubGame.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"\\misd-hs\Students\2016\S\David Stein\GitHub\MICompClub2016\CompClubGame\Release\CompClubGame.lib" /MACHINE:X86 /SAFESEH Release\AstroObj.obj
          Release\CompClubGame.obj
          Release\Galaxy.obj
          Release\Planet.obj
+         Release\Player.obj
          Release\Quadrant.obj
          Release\Renderer.obj
+         Release\Ship.obj
          Release\Star.obj
          Release\StarCluster.obj
          Release\stdafx.obj
          Generating code
          Finished generating code
-         CompClubGame.vcxproj -> C:\Users\David Stein\Desktop\GitHub\MICompClub2016\CompClubGame\Release\CompClubGame.exe
-       Manifest:
-         c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\David Stein\Desktop\GitHub\MICompClub2016\CompClubGame\Release\CompClubGame.exe;#1" /manifest Release\CompClubGame.exe.intermediate.manifest
-       FinalizeBuildStatus:
-         Deleting file "Release\CompClubGame.unsuccessfulbuild".
-         Touching "Release\CompClubGame.lastbuildstate".
-     1>Done Building Project "C:\Users\David Stein\Desktop\GitHub\MICompClub2016\CompClubGame\CompClubGame\CompClubGame.vcxproj" (build target(s)).
+         CompClubGame.vcxproj -> \\misd-hs\Students\2016\S\David Stein\GitHub\MICompClub2016\CompClubGame\Release\CompClubGame.exe
+     1>Done Building Project "\\misd-hs\Students\2016\S\David Stein\GitHub\MICompClub2016\CompClubGame\CompClubGame\CompClubGame.vcxproj" (Rebuild target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:04.51
+Time Elapsed 00:02:06.00

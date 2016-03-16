@@ -1,6 +1,6 @@
 #include "StdAfx.h"
 #include "Ship.h"
-#include <SFML\Graphics.hpp>;
+#include <SFML\Graphics.hpp>
 
 sf::Vector2f velocity, location;
 

@@ -1,34 +1,49 @@
-﻿Build started 2/3/2016 2:57:06 PM.
-     1>Project "C:\Users\David Stein\Desktop\GitHub\MICompClub2016\CompClubGame\CompClubGame\CompClubGame.vcxproj" on node 2 (build target(s)).
-     1>InitializeBuildStatus:
-         Creating "Debug\CompClubGame.unsuccessfulbuild" because "AlwaysCreate" was specified.
-       ClCompile:
-         All outputs are up-to-date.
-         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\Users\David Stein\Desktop\GitHub\MICompClub2016\CompClubGame\..\SFML-2.3.2\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\CompClubGame.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt StarCluster.cpp
+﻿Build started 3/16/2016 2:43:15 PM.
+     1>Project "\\misd-hs\Students\2016\S\David Stein\GitHub\MICompClub2016\CompClubGame\CompClubGame\CompClubGame.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"\\misd-hs\Students\2016\S\David Stein\GitHub\MICompClub2016\CompClubGame\..\SFML-2.3.2\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Debug\CompClubGame.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"\\misd-hs\Students\2016\S\David Stein\GitHub\MICompClub2016\CompClubGame\..\SFML-2.3.2\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt AstroObj.cpp CompClubGame.cpp Galaxy.cpp Planet.cpp Player.cpp Quadrant.cpp Renderer.cpp Ship.cpp Star.cpp StarCluster.cpp
          StarCluster.cpp
-     1>c:\users\david stein\desktop\github\micompclub2016\compclubgame\compclubgame\starcluster.cpp(29): warning C4244: 'argument' : conversion from 'time_t' to 'int', possible loss of data
-     1>c:\users\david stein\desktop\github\micompclub2016\compclubgame\compclubgame\starcluster.cpp(44): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
-     1>c:\users\david stein\desktop\github\micompclub2016\compclubgame\compclubgame\starcluster.cpp(44): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>\\misd-hs\students\2016\s\david stein\github\micompclub2016\compclubgame\compclubgame\starcluster.cpp(29): warning C4244: 'argument' : conversion from 'time_t' to 'int', possible loss of data
+     1>\\misd-hs\students\2016\s\david stein\github\micompclub2016\compclubgame\compclubgame\starcluster.cpp(42): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+         Star.cpp
+     1>\\misd-hs\students\2016\s\david stein\github\micompclub2016\compclubgame\compclubgame\star.cpp(54): warning C4244: 'argument' : conversion from 'time_t' to 'int', possible loss of data
+         Ship.cpp
+         Renderer.cpp
+     1>\\misd-hs\students\2016\s\david stein\github\micompclub2016\compclubgame\compclubgame\renderer.cpp(103): warning C4244: 'return' : conversion from 'float' to 'int', possible loss of data
+         Quadrant.cpp
+     1>\\misd-hs\students\2016\s\david stein\github\micompclub2016\compclubgame\compclubgame\quadrant.cpp(29): warning C4244: 'argument' : conversion from 'time_t' to 'int', possible loss of data
+         Player.cpp
+         Planet.cpp
+     1>\\misd-hs\students\2016\s\david stein\github\micompclub2016\compclubgame\compclubgame\planet.cpp(15): warning C4244: '+=' : conversion from 'double' to 'float', possible loss of data
+     1>\\misd-hs\students\2016\s\david stein\github\micompclub2016\compclubgame\compclubgame\planet.cpp(16): warning C4244: '+=' : conversion from 'double' to 'float', possible loss of data
+     1>\\misd-hs\students\2016\s\david stein\github\micompclub2016\compclubgame\compclubgame\planet.cpp(37): warning C4244: '+=' : conversion from 'double' to 'float', possible loss of data
+     1>\\misd-hs\students\2016\s\david stein\github\micompclub2016\compclubgame\compclubgame\planet.cpp(38): warning C4244: '+=' : conversion from 'double' to 'float', possible loss of data
+         Galaxy.cpp
+     1>\\misd-hs\students\2016\s\david stein\github\micompclub2016\compclubgame\compclubgame\galaxy.cpp(30): warning C4244: 'argument' : conversion from 'time_t' to 'int', possible loss of data
+         CompClubGame.cpp
+         AstroObj.cpp
+     1>\\misd-hs\students\2016\s\david stein\github\micompclub2016\compclubgame\compclubgame\astroobj.cpp(12): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>\\misd-hs\students\2016\s\david stein\github\micompclub2016\compclubgame\compclubgame\astroobj.cpp(29): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+         Generating Code...
        Link:
-         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\David Stein\Desktop\GitHub\MICompClub2016\CompClubGame\Debug\CompClubGame.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\Users\David Stein\Desktop\GitHub\MICompClub2016\CompClubGame\..\SFML-2.3.2\lib" "sfml-graphics-d.lib" "sfml-window-d.lib" "sfml-main-d.lib" "sfml-system-d.lib" "sfml-network-d.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\CompClubGame.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\David Stein\Desktop\GitHub\MICompClub2016\CompClubGame\Debug\CompClubGame.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\David Stein\Desktop\GitHub\MICompClub2016\CompClubGame\Debug\CompClubGame.lib" /MACHINE:X86 Debug\AstroObj.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"\\misd-hs\Students\2016\S\David Stein\GitHub\MICompClub2016\CompClubGame\Debug\CompClubGame.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"\\misd-hs\Students\2016\S\David Stein\GitHub\MICompClub2016\CompClubGame\..\SFML-2.3.2\lib" "sfml-graphics-d.lib" "sfml-window-d.lib" "sfml-main-d.lib" "sfml-system-d.lib" "sfml-network-d.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"\\misd-hs\Students\2016\S\David Stein\GitHub\MICompClub2016\CompClubGame\Debug\CompClubGame.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"\\misd-hs\Students\2016\S\David Stein\GitHub\MICompClub2016\CompClubGame\Debug\CompClubGame.lib" /MACHINE:X86 Debug\AstroObj.obj
          Debug\CompClubGame.obj
          Debug\Galaxy.obj
          Debug\Planet.obj
+         Debug\Player.obj
          Debug\Quadrant.obj
          Debug\Renderer.obj
+         Debug\Ship.obj
          Debug\Star.obj
          Debug\StarCluster.obj
          Debug\stdafx.obj
-     1>AstroObj.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/INCREMENTAL:NO' specification
-     1>sfml-main-d.lib(MainWin32.cpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'sfml-main-d.lib(MainWin32.cpp.obj)' or at 'C:\Users\David Stein\Desktop\GitHub\MICompClub2016\CompClubGame\Debug\vc100.pdb'; linking object as if no debug info
-         CompClubGame.vcxproj -> C:\Users\David Stein\Desktop\GitHub\MICompClub2016\CompClubGame\Debug\CompClubGame.exe
-       Manifest:
-         c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\David Stein\Desktop\GitHub\MICompClub2016\CompClubGame\Debug\CompClubGame.exe;#1" /manifest Debug\CompClubGame.exe.intermediate.manifest
-       FinalizeBuildStatus:
-         Deleting file "Debug\CompClubGame.unsuccessfulbuild".
-         Touching "Debug\CompClubGame.lastbuildstate".
-     1>Done Building Project "C:\Users\David Stein\Desktop\GitHub\MICompClub2016\CompClubGame\CompClubGame\CompClubGame.vcxproj" (build target(s)).
+     1>AstroObj.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/OPT:LBR' specification
+     1>sfml-main-d.lib(MainWin32.cpp.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'sfml-main-d.lib(MainWin32.cpp.obj)' or at '\\misd-hs\Students\2016\S\David Stein\GitHub\MICompClub2016\CompClubGame\Debug\vc120.pdb'; linking object as if no debug info
+         CompClubGame.vcxproj -> \\misd-hs\Students\2016\S\David Stein\GitHub\MICompClub2016\CompClubGame\Debug\CompClubGame.exe
+     1>Done Building Project "\\misd-hs\Students\2016\S\David Stein\GitHub\MICompClub2016\CompClubGame\CompClubGame\CompClubGame.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:01.32
+Time Elapsed 00:00:19.63
